@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="odometer-0.4.6/themes/odometer-theme-car.css" />
+</head>
+<body>
+ 
+    <p class="odometer" id="uno"></p>
+    <p class="odometer" id="dos"></p>
+    <h1 class="odometer" id="tres"></h1>
+    <script src="odometer-0.4.6/odometer.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+
+            var el1 = document.querySelector('#uno');
+            od = new Odometer({
+            el: el1,
+            value: 0,
+            duration: 4000
+            });
+            el1.innerHTML = 10
+                        
+            var el2 = document.querySelector('#dos');
+            od = new Odometer({
+            el: el2,
+            value: 0,
+            duration: 4000
+            });
+            el2.innerHTML = 100
+
+            var el3 = document.querySelector('#tres');
+            od = new Odometer({
+            el: el3,
+            value: 0,
+            duration: 4000
+            });
+            el3.innerHTML = 3000
+        })
+    </script>
+    <!--Documentacion https://github.hubspot.com/odometer/
+    https://blog.hostdime.com.co/efecto-de-transicion-de-numeros-con-javascript/-->
+</body>
+</html>
