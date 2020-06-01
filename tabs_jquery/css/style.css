@@ -13,19 +13,18 @@ body{
     margin: 0;
 }
 
-.tabs-nav li{
+.tabs-nav li a{
     background: -webkit-linear-gradient(top, white, silver);
     float: left;
     margin-right: 5px;
     border-radius: 5px;
     padding: 5px 10px;
-}
-.tabs-nav li:hover{
-    background: -webkit-linear-gradient(top, silver, white);
-}
-.tabs-nav li a{
     text-decoration: none;
 }
+.active{
+    background: -webkit-linear-gradient(top, silver, white) !important;
+}
+
 .contenido{
     padding: 10px;
     background: silver;
